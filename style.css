@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+a {
+  font-family: fatboy;
+  color:brown;
+}
+
+a:hover {
+  color:pink;
+}
+
+a:visited{
+  color:pink;
+}
+
+h1 {
+  font-family: fatboy;
+  font-size:8vw;
+}
+
+p {
+  font-family: fatboy;
+}
+
+@font-face {
+  font-family: "fatboy";
+  src: url("Website Assets/fatboy-slim-bltc-brk/fbsbltc.ttf") 
+  
+}
+
+audio {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+  margin:0;
+}
+
+.image-container img {
+  margin:0;
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.image-container h1 {
+  position: absolute;
+  top: 55%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Adjust text color as needed */
+  text-align: center;
+  font-family: fatboy;
+  font-size:6vw;
+}
+
+.button {
+  display: block;
+   margin: 0 auto;
+    margin-top:50px;
+}
+
+.button img {
+  display: block;
+  margin: 0 auto;
+  margin-top:100px;
+  }
+
+.work-container {
+  margin-bottom: 100px;
+  width:100%;
+  overflow:hidden;
+}
+
+.work-container img {
+  display: block;
+  margin: 0 auto;
+  margin-top:100px;
+  width:100%;
+  height:auto;
+}
+
+.work-container p {
+
+}
+
+#black-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  text-align: right;
+}
+
+#black-bar img {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
+  cursor: pointer;
+}

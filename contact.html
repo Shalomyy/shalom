@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>CONTACT</title>
+    
+  </head>
+  <body>
+
+<h1 style="color:white">CONTACT</h1>
+<div style="color:white; margin: 50px;">
+    <p style="font-size:50px;">Shalom Yemane</p>
+<br>
+    <p style="font-size:30px;">shalom18544@gmail.com</p>
+<br>
+    <p>TAKE A COPY OF MY RESUME:</p>
+    <a href="Website Assets/Shalom Yemane Resume 2023.pdf" download="Shalom Yermane Resume 2023">Download PDF</a>
+  </div>
+
+    <div id="black-bar">
+      <a href="index.html">
+        <img src="Website Assets/home-button.png" alt="Go to Home">
+      </a>
+    </div>
+    
+    <audio controls autoplay>
+      <source src="Website Assets/tunes.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+      // Get the audio element
+      const audioPlayer = document.getElementById('audioPlayer');
+  
+      // Check if the audio is supported and playback is not prevented
+      if (audioPlayer && audioPlayer.autoplay && typeof audioPlayer.play === 'function') {
+          // Add an event listener for page unload to store the current playback time
+          window.addEventListener('beforeunload', () => {
+              localStorage.setItem('audioPlaybackTime', audioPlayer.currentTime.toString());
+          });
+  
+          // Restore the playback time if available
+          const storedPlaybackTime = localStorage.getItem('audioPlaybackTime');
+          if (storedPlaybackTime) {
+              audioPlayer.currentTime = parseFloat(storedPlaybackTime);
+          }
+      }
+  </script>  
+  </body>
+</html>

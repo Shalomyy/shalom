@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>ABOUT</title>
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+  </head>
+  <body>
+
+<h1 style="color:black">ABOUT</h1>
+<div style="color:black; margin: 50px;">
+    <p>Shalom Yemane, a digital artist, delves into
+        the realm of dark femininity and sadness to
+        craft a narrative where shadow and light
+        intertwine in a dance of profound
+        introspection. Within the cocoon of melancholy,
+        I discover solace and draw inspiration,
+        utilizing my artistic expressions as a conduit
+        to encapsulate the emotional depths that
+        surface during moments of solitude and
+        vulnerability.
+    </p>
+<br>
+    <p>My artworks serve as an invitation, beckoning
+    viewers to immerse themselves in a world
+    where the dichotomy of darkness and light
+    converges harmoniously. In this space,
+    vulnerability is not only acknowledged but
+    celebrated, and sadness finds solace within
+    the transformative power of art. Each piece
+    becomes a journey, a testament to the strength
+    that can be discovered within the depths of
+    the gloom. </p>
+<br>
+    <p>As you explore my creations, lose yourself in
+        the evocative landscapes of shadows and rain.
+        Let the subtle nuances of emotions reflected in
+        my work serve as mirrors, prompting
+        introspection and a connection to your own inner
+        strength. This is more than art; it is an experience
+        —an opportunity to reflect, to feel, and ultimately
+        to discover the resilience that resides within the
+        human spirit. Welcome to a world where the
+        interplay of light and darkness becomes a
+        poignant celebration of the beauty
+        found in vulnerability, feminity, and wickedness.</p>
+    </div>
+
+    <div id="black-bar">
+        <a href="index.html">
+          <img src="Website Assets/home-button.png" alt="Go to Home">
+        </a>
+      </div>
+
+      <audio controls autoplay>
+        <source src="Website Assets/tunes.mp3" type="audio/mp3">
+      </audio>
+
+<script>
+    // Get the audio element
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    // Check if the audio is supported and playback is not prevented
+    if (audioPlayer && audioPlayer.autoplay && typeof audioPlayer.play === 'function') {
+        // Add an event listener for page unload to store the current playback time
+        window.addEventListener('beforeunload', () => {
+            localStorage.setItem('audioPlaybackTime', audioPlayer.currentTime.toString());
+        });
+
+        // Restore the playback time if available
+        const storedPlaybackTime = localStorage.getItem('audioPlaybackTime');
+        if (storedPlaybackTime) {
+            audioPlayer.currentTime = parseFloat(storedPlaybackTime);
+        }
+    }
+</script>  
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>WORK</title>
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+  </head>
+  <body>
+
+<h1 style="color:black">WORK</h1>
+<div style="color:black; margin: 50px;">
+    </div>
+
+<div id="work-container">
+    <img src="Website Assets/work1.jpeg" alt="">
+    <p><i>"Solitude's Silent Gaze", 2024</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work2.jpeg" alt="">
+    <p><i>"Blue Melancholy", 2024</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work3.jpeg" alt="">
+    <p><i>"Dolly's Enchantment", 2024</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work4.jpeg" alt="">
+    <p><i>"Winter's Embrace and Vulnerability", 2024</i></p>
+</div>
+<br><br>  
+<div id="work-container">
+    <img src="Website Assets/work5.png" alt="" width="100%">
+    <p><i>"Sojourn in the Rain", 2024</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work6.GIF" alt="">
+    <p><i>"A Divine Embrace of Redemption", 2024</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work7.jpeg" alt="">
+    <p><i>"Concealed Echoes", 2022</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work8.png" alt="">
+    <p><i>"Punk Pas de Deux: Rebel's Dance in Black Swan's Shadow", 2022</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work9.png" alt="">
+    <p><i>"Beneath the Crowd", 2022</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work10.JPG" alt="">
+    <p><i>"Seeking Solace Above", 2022</i></p>
+</div>
+<br><br>
+<div id="work-container">
+    <img src="Website Assets/work11.jpg" alt="">
+    <p><i>"Distracted Defiance", 2022</i></p>
+</div>
+
+<div id="black-bar">
+    <a href="index.html">
+      <img src="Website Assets/home-button.png" alt="Go to Home">
+    </a>
+  </div>
+
+  <audio controls autoplay>
+    <source src="Website Assets/tunes.mp3" type="audio/mp3">
+  </audio>
+  <br><br>
+
+
+<h1>Video</h1>
+    <iframe 
+    width="100%" 
+    height="700px" 
+    src="https://www.youtube.com/embed/1WfIdDr2ySM?si=enogs0nV8b1eHWZN" 
+    frameborder="0" 
+    allowfullscreen >
+    </iframe>
+<br><br>
+    <iframe 
+    width="100%" 
+    height="700px" 
+    src="https://www.youtube.com/embed/NyiXL6Y4O70?si=VYKIqTd-S06fw9Z5" 
+    frameborder="0" 
+    allowfullscreen >
+    </iframe>
+<br><br>
+    <iframe 
+    width="100%" 
+    height="700px" 
+    src="https://www.youtube.com/embed/LTQJANFtwXM?si=0kQw2XePAqyZfpSr" 
+    frameborder="0" 
+    allowfullscreen >
+    </iframe>
+
+    
+
+  <script>
+    // Get the audio element
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    // Check if the audio is supported and playback is not prevented
+    if (audioPlayer && audioPlayer.autoplay && typeof audioPlayer.play === 'function') {
+        // Add an event listener for page unload to store the current playback time
+        window.addEventListener('beforeunload', () => {
+            localStorage.setItem('audioPlaybackTime', audioPlayer.currentTime.toString());
+        });
+
+        // Restore the playback time if available
+        const storedPlaybackTime = localStorage.getItem('audioPlaybackTime');
+        if (storedPlaybackTime) {
+            audioPlayer.currentTime = parseFloat(storedPlaybackTime);
+        }
+    }
+</script>  
+</body>
+</html>
